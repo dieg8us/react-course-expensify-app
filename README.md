@@ -1,2 +1,2 @@
-# indecision-app
+# expensify-app
 React App
