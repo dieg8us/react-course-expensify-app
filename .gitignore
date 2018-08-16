@@ -3,3 +3,7 @@ src/playground/*
 .eslintrc.json
 .vscode/
 .directory
+public/bundle.js
+public/bundle.js.map
+public/styles.css
+public/styles.css.map
