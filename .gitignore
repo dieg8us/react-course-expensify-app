@@ -4,3 +4,5 @@ src/playground/*
 .vscode/
 .directory
 public/dist/
+.env.test
+.env.development
