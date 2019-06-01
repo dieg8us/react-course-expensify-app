@@ -2,7 +2,7 @@ import uuid from "uuid";
 import database from "../firebase/firebase";
 
 // Add expense
-const addExpense = expense => ({
+export const addExpense = expense => ({
   type: "ADD_EXPENSE",
   expense
 });
@@ -29,16 +29,22 @@ export const startAddExpense = (expenseData = {}) => {
 };
 
 // Remove expense
-const removeExpense = ({ id } = {}) => ({
+export const removeExpense = ({ id } = {}) => ({
   type: "REMOVE_EXPENSE",
   id
 });
 
 // Edit expense
-const editExpense = (id, updates) => ({
+export const editExpense = (id, updates) => ({
   type: "EDIT_EXPENSE",
   id,
   updates
 });
 
-export { addExpense, removeExpense, editExpense };
+// Set Expenses 
+export const setExpenses = (expenses) => ({
+  type: "SET_EXPENSES",
+  expenses
+});
+
+export const startSetExpenses = { }; 
